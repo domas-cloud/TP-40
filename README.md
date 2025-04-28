@@ -21,21 +21,30 @@ Kodo struktūra:
 
 Ryšys su elektromechaniniais komponentais:
 •	Arduino Mega 2560 naudojamas žemos pakopos realaus laiko operacijoms vykdyti, kaip jutiklių nuskaitymui (per I2C) ir duomenų siuntimui į Raspberry Pi.
+
 •	Sensor Shield palengvina fizinius jutiklių sujungimus su Arduino Mega.
+
 •	Motor Shield valdo nuolatinės srovės (DC) variklius pagal skaičiavimo modulio perduotas komandas.
+
 •	Raspberry Pi 4 atlieka pagrindinį sprendimų priėmimo vaidmenį: gauna duomenis iš Arduino, apdoroja juos (apskaičiuoja padėtį sienos atžvilgiu) ir siunčia atitinkamas komandas atgal į Arduino.
 
 Kodo kūrimo, kompiliavimo ir įkėlimo procesas:
 •	Programavimo kalbos:
+
 o	Arduino Mega: C kalba naudojant Arduino IDE 
+
 o	Raspberry Pi 4: Python kalba, redaguojama ir vykdoma tiesiai per arba terminalą.
 
 •	Kūrimo aplinka:
+
 o	Arduino kodas rašomas, kompiliuojamas ir įkeliamas naudojant Arduino IDE.
+
 o	Raspberry Pi Python skriptai tiesiogiai redaguojami ir paleidžiami be atskiro kompiliavimo proceso.
 
 •	Įkėlimo procesas:
+
 o	Arduino Mega: kodas kompiliuojamas ir per USB kabelį įkeliamas naudojant Arduino IDE.
+
 o	Raspberry Pi 4: skriptai redaguojami tiesiogiai Raspberry Pi aplinkoje, vykdomi per Python interpretatorių.
 
 
