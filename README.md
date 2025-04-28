@@ -18,6 +18,7 @@ This repository contains engineering materials of a self-driven vehicle's model 
 Techniniai paaiškinimai apie kodą
 Kodo struktūra:
 ...........
+
 Ryšys su elektromechaniniais komponentais:
 •	Arduino Mega 2560 naudojamas žemos pakopos realaus laiko operacijoms vykdyti, kaip jutiklių nuskaitymui (per I2C) ir duomenų siuntimui į Raspberry Pi.
 •	Sensor Shield palengvina fizinius jutiklių sujungimus su Arduino Mega.
